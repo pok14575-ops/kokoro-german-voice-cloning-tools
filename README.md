@@ -4,10 +4,12 @@ Utilities for training and extracting German voices in Kokoro voicepack format.
 
 This repository provides helper scripts for creating German Kokoro TTS voices using StyleTTS2-based fine-tuning workflows. The focus is on solving the practical parts of the pipeline that are often missing from upstream documentation: dataset preparation, phoneme generation, training conversion, voicepack extraction, and validation.
 
-This is the original : https://github.com/semidark/kikiri-tts
-I was able to iterate on it and found a solution to the kokoro format needs for german native voices. This runs on windows. Do not raise workers on windows like in the original.
+This is the original:
+https://github.com/semidark/kikiri-tts
 
+I was able to iterate on it and found a solution to the Kokoro format needs for German native voices.
 
+This workflow runs on Windows. Worker counts should be adjusted conservatively on Windows systems, as aggressive multiprocessing settings can cause instability on consumer hardware.
 ---
 
 ## Features
